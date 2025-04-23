@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, Arial, sans-serif;
+}
+body {
+  background: radial-gradient(
+    circle at center 10%,
+    gray,
+    black 1200px
+  );
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+header {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 5%;
+  align-items: center;
+}
+nav a {
+  text-decoration: solid;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+nav a:hover {
+  background-color: grey;
+}
+
+/* search styling is started here */
+
+.search {
+  display: flex;
+  align-items: center;
+  max-width: 300px;
+  margin: 10% auto;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+#search {
+  flex-grow: 1;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  outline: none;
+}
+
+#search-btn {
+  background-color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#search-btn:hover {
+  background-color: gray;
+}
+
+#search-btn img {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+#search::placeholder {
+  color: #888;
+}
+
+/* search results styling starts from here */
+
+.results {
+  display: flex;
+  padding: 0px 10%;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.tile {
+  height: 320px;
+  width: 180px;
+  background-color: black;
+  border: 5px solid gray;
+  padding: 5px;
+  margin: 10px;
+  text-decoration: none;
+}
+
+.tile img {
+  width: 100%;
+  height: 240px;
+  object-fit: fill;
+}
+
+.tile p {
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  height: 35px;
+  text-overflow: clip;
+  overflow: hidden;
+}
+
+.tile button {
+  display: block;
+  margin: 5px auto;
+  padding: 5px;
+  border: 5px transparent;
+  border-radius: 4px;
+  background-color: gray;
+}
+
+.tile .button-active {
+  background-color: red;
+  color: white;
+}

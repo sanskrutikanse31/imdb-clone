@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="shortcut icon" href="./assets/logo.svg" type="image/x-icon">
+    <meta name="description" content="Discover and explore your favorite movies and TV shows with our IMDb clone! Built using pure vanilla JavaScript and leveraging the OMDB database.">
+    <title>IMDB Clone</title>
+</head>
+
+<body>
+    <header>
+        <a href="" class="logo">
+            <img src="./assets/logo.svg" alt="Home">
+        </a>
+        <nav>
+            <a href="./pages/myfavouritespage.html">My Favourites</a>
+        </nav>
+    </header>
+    <main>
+        <div class="search">
+            <input type="search" name="search" id="search" placeholder="Enter the Movie Title">
+            <button id="search-btn">
+                <img src="./assets/search.svg" alt="search">
+            </button>
+        </div>
+        <!-- search results are displayed here -->
+        <div class="results" id="results"></div>
+    </main>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
